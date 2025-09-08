@@ -8,7 +8,7 @@ export function SignIn() {
         await signIn("github", { redirectTo: "/" })
       }}
     >
-      <button type="submit">Sign in</button>
+      <button type="submit" className="cursor-pointer">Sign in</button>
     </form>
   )
 }
