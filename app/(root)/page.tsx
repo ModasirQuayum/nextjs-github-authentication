@@ -1,0 +1,16 @@
+import { auth } from "@/auth"
+
+export default async function Home(){
+    const session = await auth()
+    return(
+        <>
+        {session && session?.user ?(
+            <h1 className="bg-orange-200">
+                {session?.user?.name}
+            </h1>
+        ):(
+            <h1 className="bg-orange-200">Home</h1>
+        )}
+        </>
+    )
+}
