@@ -5,11 +5,11 @@ export default async function Home(){
     return(
         <>
         {session && session?.user ?(
-            <h1 className="bg-orange-200">
+            <h1 className="bg-orange-200 font-bold text-3xl px-5">
                 {session?.user?.name}
             </h1>
         ):(
-            <h1 className="bg-orange-200">Home</h1>
+            <h1 className="bg-orange-200 font-bold text-3xl px-5">Home</h1>
         )}
         </>
     )
